@@ -49,8 +49,10 @@ module.exports = {
       },
       conversation: {
         type: Sequelize.BIGINT,
-        model: 'conversation',
-        key: 'id',
+        references: {
+          model: 'conversation',
+          key: 'id'
+        },
         allowNull: false
       },
       created_at: {

@@ -37,9 +37,6 @@ Wipro-Bot faz recomendações de refeições diárias
 { "description": "Serviço indisponível" }
 ```
 
-
-
-
 ### Instalação
 
 ### Testes
