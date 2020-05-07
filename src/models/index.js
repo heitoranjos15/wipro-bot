@@ -20,4 +20,6 @@ fs.readdirSync(__dirname)
 db.sequelize = sequelize
 db.Sequelize = Sequelize
 
+db.models.Message.belongsTo(db.models.Conversation, { through: 'conversation', foreignKey: 'id' })
+
 module.exports = db

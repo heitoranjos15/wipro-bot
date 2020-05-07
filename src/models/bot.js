@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) =>
     }
   },
   {
-    tableName: 'Bot',
+    tableName: 'bot',
     createdAt: 'created_at',
     updatedAt: 'updated_at',
     timestamps: true

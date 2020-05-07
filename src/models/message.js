@@ -6,19 +6,22 @@ module.exports = (sequelize, DataTypes) =>
       autoIncrement: true
     },
     text: {
-      type: DataTypes.String,
+      type: DataTypes.STRING,
       allowNull: false
     },
     conversation: {
       type: DataTypes.BIGINT,
-      references: 'conversation',
-      referencesKey: 'id',
+      references: {
+        model: 'conversation',
+        key: 'id'
+      },
       allowNull: false
     }
   },
   {
     tableName: 'message',
     createdAt: 'created_at',
+    updatedAt: false,
     timestamps: true
   }
   )

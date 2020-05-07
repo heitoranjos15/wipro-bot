@@ -4,13 +4,13 @@
  * @version v.1.0
  * @description Inherits from {Error} and adds api specific information with a descriptor property
  */
-class ConversationNotFound extends Error {
+class NotFound extends Error {
 }
 
-class MessageNotFound extends Error {
+class InvalidData extends Error{
 }
 
 module.exports = {
-  ConversationNotFound,
-  MessageNotFound
+  NotFound,
+  InvalidData
 }
